@@ -66,8 +66,17 @@ function App() {
       
       <div class="Center-content">
       <form onSubmit={handleSearch}>
-        <input type="text" value={song} onChange={(e) => setSong(e.target.value)} className='Buscador' lder="Search..."/>
-        <button type="submit" className='Lupa'><i class="bi bi-search"></i></button>
+      <div className="Buscador-container">
+              <input 
+                placeholder="¿Qué quieres reproducir?" 
+                tabindex="0"
+                type="text" 
+                value={song} 
+                onChange={(e) => setSong(e.target.value)} 
+                className='Buscador' 
+                />
+              <i className="bi bi-search Buscador-icon"></i>
+            </div>
       </form>
       </div>
     </header>

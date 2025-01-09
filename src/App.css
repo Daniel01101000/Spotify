@@ -86,21 +86,7 @@ header {
   align-items: center;
   justify-content: space-between; 
   padding: 0 20px;
-}
-
-.Buscador {
-  text-align: center;
-  height: 30px;
-  border-radius: 100px;
-  background-color: #333;
-  cursor: text;
-  width: 80%; /* Ajusta el ancho según sea necesario */
-  max-width: 400px; /* Ancho máximo para el input */
-  margin: 10px 0; /* Espaciado vertical */
-  color: #fff;
-  font-size: 17px;
-  padding: 0 10px;
-  border: none;
+  height: 100px;
 }
 
 .Lupa {
@@ -142,4 +128,34 @@ header {
   display: flex;
   flex-wrap: nowrap; /* Evita que las tarjetas se envuelvan */
   gap: 10px; /* Espaciado entre las tarjetas (opcional) */
+}
+
+.Buscador-container {
+  position: relative;
+  width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.Buscador {
+  text-align: left; /* Alineación del texto a la izquierda */
+  height: 40px;
+  border-radius: 100px;
+  background-color: #1f1f1f;
+  cursor: text;
+  width: 85%; /* Ajusta el ancho según sea necesario */
+  max-width: 400px; /* Ancho máximo para el input */
+  margin: 10px 0; /* Espaciado vertical */
+  font-size: 17px;
+  padding-left: 45px;
+  border: none;
+  color: #fff;
+}
+
+.Buscador-icon {
+  position: absolute;
+  left: 15px; /* Coloca el icono en la parte izquierda */
+  top: 49%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 2;
 }
