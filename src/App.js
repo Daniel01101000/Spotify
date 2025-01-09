@@ -3,6 +3,8 @@ import { useState } from 'react';
 import Playlist from './Playlist';
 import PlayListContainer from './PlayListContainer';
 import BottonPlay from './BottonPlay.jsx';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import logo from './Logo.png';
 
 function App() {
   const [song, setSong] = useState('');
@@ -58,29 +60,49 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h2>Spotify</h2>
+    <div>
+    <header>
+    <img className='Logo' src={logo} alt='logo'/>
+      
+      <div class="Center-content">
       <form onSubmit={handleSearch}>
-        <input type="text" value={song} onChange={(e) => setSong(e.target.value)} />
-        <button type="submit">buscar</button>
+        <input type="text" value={song} onChange={(e) => setSong(e.target.value)} className='Buscador' lder="Search..."/>
+        <button type="submit" className='Lupa'><i class="bi bi-search"></i></button>
       </form>
-      <>
+      </div>
+    </header>
+
+    <div className="Container">
+
+    
+    <div className="Playlist">
+    
+      <PlayListContainer playlist={playlist} handleDelete={handleDelete}/>
+     
+      </div>
+
+      <div className="Card">
         {songs.map((song, index) => (
-          <div key={index}>
+          <div key={index} className="card">
             {song.data && song.data.albumOfTrack && song.data.albumOfTrack.coverArt && song.data.albumOfTrack.coverArt.sources && song.data.albumOfTrack.coverArt.sources[0] && (
-              <img src={song.data.albumOfTrack.coverArt.sources[0].url} alt='Cancion'/>
+              <img className='imagenes-Canciones' src={song.data.albumOfTrack.coverArt.sources[0].url} alt='Cancion'/>
             )}
             {song.data && song.data.name && (
-              <h2>{song.data.name}</h2>
+             <h2>{song.data.name}</h2>
             )}
+            <p>{song.data.date}</p>
             <Playlist song={song} index={index} addToPlaylist={() => addToPlaylist(song)} />
             <BottonPlay song={song} />
           </div>
         ))}
-      </>
-      <PlayListContainer playlist={playlist} handleDelete={handleDelete}/>
+      </div>
     </div>
+</div>
   );
 }
+
+
+
+
 
 export default App;

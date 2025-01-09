@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+body {
+  background-color: #18181a;
 }
 
 .App-logo {
@@ -35,4 +35,111 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.play {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  background-color: #1DB954;
+  cursor: pointer;
+  border: none;
+}
+
+.imagenes-Canciones {
+  border-radius: 10px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+   /* Distribuye los elementos de manera uniforme */
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.card {
+  flex: 0 0 100px; /* El ancho de la tarjeta es 20% del contenedor */
+  max-height: 470px;
+  margin: 10px;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+ 
+}
+
+header {
+  background-color: #000;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 20px;
+}
+
+.Buscador {
+  text-align: center;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #333;
+  cursor: text;
+  width: 80%; /* Ajusta el ancho según sea necesario */
+  max-width: 400px; /* Ancho máximo para el input */
+  margin: 10px 0; /* Espaciado vertical */
+  color: #fff;
+  font-size: 17px;
+  padding: 0 10px;
+  border: none;
+}
+
+.Lupa {
+  color: #fff;
+  background-color: #333;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+}
+
+.Logo {
+  width: 50px;
+  height: 50px;
+}
+
+.Center-content {
+  display: flex;
+  align-items: center; /* Centra verticalmente el buscador y la lupa */
+  justify-content: center; /* Centra horizontalmente los elementos dentro */
+  gap: 10px; /* Espaciado entre el buscador y la lupa */
+  width: 100%;
+}
+
+.Playlist {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 20%;
+  border-radius: 15px;
+}
+
+.Container {
+  display: flex;
+  flex-wrap: nowrap; /* Evita que las tarjetas se envuelvan */
+  gap: 10px; /* Espaciado entre las tarjetas (opcional) */
 }
