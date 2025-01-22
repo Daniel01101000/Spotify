@@ -1,0 +1,29 @@
+.play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1DB954;
+    cursor: pointer;
+    border: none;
+
+    position: absolute; /* Posiciona el botón encima de la imagen */
+  top: 80%; /* Centra verticalmente */
+  left: 80%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centrar el botón completamente */
+  
+
+  position: absolute;
+  top: 70%; /* Empieza completamente fuera del contenedor (abajo) */
+  left: 80%;/* Centrado horizontalmente */
+  transform: translate(-50%, 0);
+  transition: top 0.3s ease, opacity 0.3s ease; /* Transición suave para top y opacidad */
+  opacity: 0;
+  z-index: 999999;
+  }
+
+  .play:hover  {
+    top: 70%;
+    opacity: 1;
+  }

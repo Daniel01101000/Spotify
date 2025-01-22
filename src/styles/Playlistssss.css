@@ -1,0 +1,83 @@
+
+.Card-Megusta {
+    position: relative;
+    width: 290px; /* Ajusta según lo que necesites */
+    height: 70px; /* Controla el alto de la tarjeta */
+    margin: 10px auto; /* Centra la tarjeta horizontalmente */
+    background-color: #201f1f;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex; /* Asegura una buena distribución de los elementos */
+    flex-direction: row;
+    
+    transition: all 0.3s ease;
+  }
+  
+  .Corazon2 {
+    width: 70px; /* Ajusta según el tamaño deseado */
+    height: 70px;
+    border-radius: 3px;
+  }
+  
+  .Playlist-Tus-me-gusta {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .Card-Megusta:hover {
+    background-color: #686868;
+    transform: translateY(-5px);
+  }
+  
+  .Delete {
+    display: flex;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    right: 2%;
+    z-index: 999999999;
+  }
+  
+  .PlayListContainer-Container {
+    display: flex; /* O usa display: grid */
+    flex-direction: column; /* Asegura que los elementos estén apilados verticalmente */
+    align-items: center; 
+    height: 100%; 
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  .CreatePlaylist {
+    margin-bottom: 10px;
+    background-color: #252525;
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    cursor: text;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+  
+    padding: 14px 18px; /* Ajusta el padding según sea necesario */
+    line-height: normal; /* Asegúrate de no tener valores muy grandes */
+    text-align: left; /* Asegúrate de que el texto esté alineado a la izquierda */
+    box-sizing: border-box;
+  }
+  
+  .Name {
+    position: absolute;
+    top: 15px;
+    left: 90px;
+  }
+
+  .BigDiv {
+    width: 20px;
+    height: 100px;
+  }

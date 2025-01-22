@@ -1,0 +1,56 @@
+
+.ContainerCardPlaylist {
+    background-color: #aaa;
+    width: 97%;
+    height: auto;
+    min-height: 85vh;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(100, 34, 255), black);
+  }
+  
+  .ContainerCardPlaylist-Father {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    
+  }
+
+  
+.CorazonContainer {
+    display: flex;
+    gap: 20px;
+  }
+
+  
+.Corazon {
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background: linear-gradient(to bottom, rgb(100, 34, 255), black);
+  }
+
+  .Words {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .letters-Play {
+    color: #fff;
+    font-size: 1.1rem;
+    position: relative;
+    top: 25%;
+  }
+  
+  
+
+.Tus-me-gusta {
+    font-weight: bold;
+    color: #fff;
+    font-size: 4.3rem;
+    letter-spacing: -3px;
+    word-spacing: -3px;
+  }
+
+  
+  

@@ -1,0 +1,68 @@
+.Container {
+  justify-content: center;
+}
+
+
+
+.radio-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el círculo y el texto */
+  justify-content: space-between; /* Deja espacio entre el texto y el círculo */
+  gap: 20px; /* Espacio opcional entre los elementos */
+  margin-bottom: 15px;
+  position: relative;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.label-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* Asegura el contraste con el fondo */
+  position: relative;
+  left: -30%;
+}
+
+.custom-radio {
+  display: none; /* Oculta el input de radio */
+}
+
+.custom-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #707a73;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-radio:checked + .custom-label {
+  background-color: #1DB954; /* Círculo verde */
+}
+
+
+
+.Nombres {
+  margin-bottom: 20px;
+  gap: 20px;
+
+}
+
+.submit {
+  background-color: #1DB954;
+  border-radius: 70px;
+  width: 100px;
+  height: 50px;
+  color: #0f0f0f;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+}
+
+.submit1 {
+  text-align: center;
+}
+

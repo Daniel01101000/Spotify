@@ -1,5 +1,10 @@
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
 body {
   background-color: #18181a;
+  
 }
 
 .App-logo {
@@ -37,46 +42,6 @@ body {
   }
 }
 
-.play {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #fff;
-  background-color: #1DB954;
-  cursor: pointer;
-  border: none;
-}
-
-.imagenes-Canciones {
-  border-radius: 10px;
-}
-
-.Card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-   /* Distribuye los elementos de manera uniforme */
-  background-color: #333;
-  color: #fff;
-  margin-bottom: 20px;
-  width: 80%;
-  border-radius: 15px;
-}
-
-.card {
-  flex: 0 0 100px; /* El ancho de la tarjeta es 20% del contenedor */
-  max-height: 470px;
-  margin: 10px;
-  background-color: #444;
-  padding: 10px;
-  border-radius: 10px;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 30px;
- 
-}
-
 header {
   background-color: #000;
   color: aliceblue;
@@ -87,6 +52,10 @@ header {
   justify-content: space-between; 
   padding: 0 20px;
   height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 9;
 }
 
 .Lupa {
@@ -113,22 +82,6 @@ header {
   width: 100%;
 }
 
-.Playlist {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-  justify-content: space-around; /* Distribuye los elementos de manera uniforme */
-  background-color: #333;
-  color: #fff;
-  margin-bottom: 20px;
-  width: 20%;
-  border-radius: 15px;
-}
-
-.Container {
-  display: flex;
-  flex-wrap: nowrap; /* Evita que las tarjetas se envuelvan */
-  gap: 10px; /* Espaciado entre las tarjetas (opcional) */
-}
 
 .Buscador-container {
   position: relative;
@@ -158,4 +111,37 @@ header {
   cursor: pointer;
   font-size: 20px;
   z-index: 2;
+}
+
+.Home {
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 5%;
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  height: 55%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.PlaylistSelector {
+  background-color: #000;
+  color: #fff;
+}
+
+
+@media (max-width: 430px) {
+  .Buscador-container {
+    width: 40%;
+    left: 25%;
+  }
+  .Buscador {
+    font-size: 15px;
+  }
 }

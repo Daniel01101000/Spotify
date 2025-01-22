@@ -1,0 +1,152 @@
+
+.Container {
+  display: flex;
+  flex-wrap: nowrap; /* Evita que las tarjetas se envuelvan */
+    gap: 10px;
+    margin-top: 115px; /* Espaciado entre las tarjetas (opcional) */
+    padding: 20px;
+  }
+
+
+
+  .Playlist {
+    display: flex;
+    justify-content: center; /* Distribuye los elementos de manera uniforme */
+
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 20%;
+    border-radius: 15px;
+    
+  }
+  
+  .CardFondo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 230px);
+    justify-content: center;
+    color: #fff;
+    background-color: #333;
+    width: 80%;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 10px;
+    min-height: 750px;
+    position: relative; 
+  }
+
+  
+.cards {
+
+  width: 190px;
+  border-radius: 10px;
+  background-color: #333;
+  padding: 20px;
+  }
+
+
+
+  .cards:hover {
+    background-color: #555555;
+  }
+
+  
+.imagenes-Canciones {
+    border-radius: 10px;
+    width: 190px;
+    height: 190px;
+  }
+
+  .Content-Image {
+    position: relative; /* Hace que los elementos hijos con posición absoluta se posicionen en relación al contenedor */
+  display: inline-block;
+  }
+
+
+  .cards:hover .Plus-Button {
+    color: #333; /* Muestra el botón cuando se hace hover sobre el contenedor */
+  }
+
+  .play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1DB954;
+    cursor: pointer;
+    border: none;
+
+    position: absolute; /* Posiciona el botón encima de la imagen */
+  top: 80%; /* Centra verticalmente */
+  left: 80%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centrar el botón completamente */
+  
+
+  position: absolute;
+  top: 70%; /* Empieza completamente fuera del contenedor (abajo) */
+  left: 80%;/* Centrado horizontalmente */
+  transform: translate(-50%, 0);
+  transition: top 0.3s ease, opacity 0.3s ease; /* Transición suave para top y opacidad */
+  opacity: 0;
+  z-index: 999999;
+  }
+
+  .cards:hover  .play{
+    top: 70%;
+    opacity: 1;
+  }
+
+
+
+  .Playlist1 {
+    display: none; 
+  }
+
+  .Playlist2 {
+    display: none;
+  }
+
+
+  @media (max-width: 1710px) {
+    .Playlist {
+      display: none;
+    }
+
+    .CardFondo {
+      width: 90%;
+    }
+
+    .Playlist1 {
+      display: flex; 
+      width: 10%;
+      background-color: #333;
+      border-radius: 15px;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .CardFondo {
+      width: 100%;
+    }
+
+    .Playlist1 {
+      display: none;
+    }
+    .Playlist2 {
+      display: flex; 
+      width: 92%;
+      background-color: #333;
+      border-radius: 15px;
+      justify-content: center;
+      gap: 10px;
+      color: #fff;
+    }
+    .ContainerPlaylist2 {
+      justify-content: center;
+      position: relative;
+      left: 20px;
+    }
+  }
