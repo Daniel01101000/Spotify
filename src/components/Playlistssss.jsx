@@ -6,7 +6,7 @@ import Corazon from "../images/Corazon.png";
 function Playlistssss({ playlists, setPlaylists }) {
     const [name, setName] = useState("");
   
-    // Manejar la creación de nuevas playlists
+
     const handleKeyPress = (e) => {
       if (e.key === "Enter" && name.trim() !== "") {
         const newPlaylist = { name: name.trim(), songs: [] };
@@ -17,7 +17,7 @@ function Playlistssss({ playlists, setPlaylists }) {
       }
     };
   
-    // Cargar playlists desde localStorage al iniciar
+
     useEffect(() => {
       const storedPlaylists = localStorage.getItem("playlists");
       if (storedPlaylists) {
@@ -25,12 +25,12 @@ function Playlistssss({ playlists, setPlaylists }) {
       }
     }, [setPlaylists]);
   
-    // Guardar playlists en localStorage cuando cambien
+
     useEffect(() => {
       savePlaylistsToLocalStorage(playlists);
     }, [playlists]);
   
-    // Función para guardar en localStorage
+
     const savePlaylistsToLocalStorage = (updatedPlaylists) => {
       try {
         localStorage.setItem("playlists", JSON.stringify(updatedPlaylists));
@@ -39,7 +39,6 @@ function Playlistssss({ playlists, setPlaylists }) {
       }
     };
   
-    // Manejar eliminación de playlists
     const handleDelete = (index) => {
       const updatedPlaylists = playlists.filter((_, i) => i !== index);
       setPlaylists(updatedPlaylists);

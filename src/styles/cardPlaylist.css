@@ -1,6 +1,6 @@
 
 .Content-Image {
-  position: relative; /* Hace que los elementos hijos con posición absoluta se posicionen en relación al contenedor */
+  position: relative;
 display: inline-block;
 }
 
@@ -36,7 +36,7 @@ display: inline-block;
   border-radius: 10px;
   width: 190px;
   height: 190px;
-  width: 100%; /* Asegúrate de que la imagen ocupe todo el contenedor */
+  width: 100%; 
 position: relative;
 display: inline-block;
   }
@@ -77,17 +77,17 @@ display: inline-block;
   cursor: pointer;
   border: none;
 
-  position: absolute; /* Posiciona el botón encima de la imagen */
-top: 80%; /* Centra verticalmente */
-left: 80%; /* Centra horizontalmente */
-transform: translate(-50%, -50%); /* Ajusta para centrar el botón completamente */
+  position: absolute;
+top: 80%;
+left: 80%;
+transform: translate(-50%, -50%);
 
 
 position: absolute;
-top: 70%; /* Empieza completamente fuera del contenedor (abajo) */
-left: 80%;/* Centrado horizontalmente */
+top: 70%;
+left: 80%;
 transform: translate(-50%, 0);
-transition: top 0.3s ease, opacity 0.3s ease; /* Transición suave para top y opacidad */
+transition: top 0.3s ease, opacity 0.3s ease;
 opacity: 0;
 z-index: 999999;
 }

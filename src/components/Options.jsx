@@ -5,7 +5,7 @@ import Corazon from "../images/Corazon.png";
 
 function Options({ playlists, updatePlaylists }) {
   const location = useLocation();
-  const { selectedSong } = location.state || {}; // Obtener la canción seleccionada desde el estado
+  const { selectedSong } = location.state || {};
   const [selectedPlaylistIndex, setSelectedPlaylistIndex] = useState(0);
 
   const handleSelect = (e) => {

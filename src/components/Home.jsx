@@ -76,11 +76,10 @@ function Home({ songs, playlist, setPlaylist, playlists, setPlaylists, setSelect
               <h4>{name}</h4>
               <p>{artist}</p>
 
-              {/* Pasar el índice de la canción y la función para agregarla a la playlist */}
               <Playlist
-                song={song}  // Pasar la canción completa
-                index={index} // Pasar el índice de la canción
-                addToPlaylist={addToPlaylist} // Asegúrate de pasar la función que maneja la adición a la playlist
+                song={song}  
+                index={index} 
+                addToPlaylist={addToPlaylist} 
               />
             </div>
             

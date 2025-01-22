@@ -1,5 +1,5 @@
 html {
-  font-size: 16px; /* 1rem = 16px */
+  font-size: 16px;
 }
 
 body {
@@ -76,27 +76,27 @@ header {
 
 .Center-content {
   display: flex;
-  align-items: center; /* Centra verticalmente el buscador y la lupa */
-  justify-content: center; /* Centra horizontalmente los elementos dentro */
-  gap: 10px; /* Espaciado entre el buscador y la lupa */
+  align-items: center;
+  justify-content: center; 
+  gap: 10px; 
   width: 100%;
 }
 
 
 .Buscador-container {
   position: relative;
-  width: 100%; /* Ajusta el ancho según sea necesario */
+  width: 100%;
 }
 
 .Buscador {
-  text-align: left; /* Alineación del texto a la izquierda */
+  text-align: left;
   height: 40px;
   border-radius: 100px;
   background-color: #1f1f1f;
   cursor: text;
-  width: 85%; /* Ajusta el ancho según sea necesario */
-  max-width: 400px; /* Ancho máximo para el input */
-  margin: 10px 0; /* Espaciado vertical */
+  width: 85%;
+  max-width: 400px;
+  margin: 10px 0;
   font-size: 17px;
   padding-left: 45px;
   border: none;
@@ -105,7 +105,7 @@ header {
 
 .Buscador-icon {
   position: absolute;
-  left: 15px; /* Coloca el icono en la parte izquierda */
+  left: 15px;
   top: 49%;
   transform: translateY(-50%);
   cursor: pointer;

@@ -6,7 +6,7 @@ import '../styles/ButtonPlay.css';
 
 function BottonPlay({ song }) {
   if (!song || !song.data || !song.data.uri) {
-    return null; // No renderizar nada si song o song.data.uri es undefined
+    return null;
   }
 
   return (

@@ -6,9 +6,9 @@
 
 .radio-container {
   display: flex;
-  align-items: center; /* Alinea verticalmente el círculo y el texto */
-  justify-content: space-between; /* Deja espacio entre el texto y el círculo */
-  gap: 20px; /* Espacio opcional entre los elementos */
+  align-items: center;
+  justify-content: space-between; 
+  gap: 20px;
   margin-bottom: 15px;
   position: relative;
   width: 300px;
@@ -18,13 +18,13 @@
 .label-text {
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* Asegura el contraste con el fondo */
+  color: #fff; 
   position: relative;
   left: -30%;
 }
 
 .custom-radio {
-  display: none; /* Oculta el input de radio */
+  display: none;
 }
 
 .custom-label {
@@ -39,7 +39,7 @@
 }
 
 .custom-radio:checked + .custom-label {
-  background-color: #1DB954; /* Círculo verde */
+  background-color: #1DB954;
 }
 
 

@@ -1,20 +1,20 @@
 
 .Card-Megusta {
   position: relative;
-  width: 290px; /* Ajusta según lo que necesites */
-  height: 70px; /* Controla el alto de la tarjeta */
-  margin: 10px auto; /* Centra la tarjeta horizontalmente */
+  width: 290px;
+  height: 70px;
+  margin: 10px auto;
   background-color: #201f1f;
   padding: 10px;
   border-radius: 10px;
-  display: flex; /* Asegura una buena distribución de los elementos */
+  display: flex; 
   flex-direction: row;
   
   transition: all 0.3s ease;
 }
 
 .Corazon2 {
-  width: 70px; /* Ajusta según el tamaño deseado */
+  width: 70px;
   height: 70px;
   border-radius: 3px;
 }
@@ -46,8 +46,8 @@
 }
 
 .PlayListContainer-Container {
-  display: flex; /* O usa display: grid */
-  flex-direction: column; /* Asegura que los elementos estén apilados verticalmente */
+  display: flex;
+  flex-direction: column;
   align-items: center; 
   height: 100%; 
   margin-top: 10px;
@@ -64,9 +64,9 @@
   text-align: center;
   border-radius: 20px;
 
-  padding: 14px 18px; /* Ajusta el padding según sea necesario */
-  line-height: normal; /* Asegúrate de no tener valores muy grandes */
-  text-align: left; /* Asegúrate de que el texto esté alineado a la izquierda */
+  padding: 14px 18px;
+  line-height: normal; 
+  text-align: left;
   box-sizing: border-box;
 }
 

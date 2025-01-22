@@ -1,9 +1,9 @@
 
 .Container {
   display: flex;
-  flex-wrap: nowrap; /* Evita que las tarjetas se envuelvan */
+  flex-wrap: nowrap; 
     gap: 10px;
-    margin-top: 115px; /* Espaciado entre las tarjetas (opcional) */
+    margin-top: 115px; 
     padding: 20px;
   }
 
@@ -11,7 +11,7 @@
 
   .Playlist {
     display: flex;
-    justify-content: center; /* Distribuye los elementos de manera uniforme */
+    justify-content: center; 
 
     background-color: #333;
     color: #fff;
@@ -58,13 +58,13 @@
   }
 
   .Content-Image {
-    position: relative; /* Hace que los elementos hijos con posición absoluta se posicionen en relación al contenedor */
+    position: relative; 
   display: inline-block;
   }
 
 
   .cards:hover .Plus-Button {
-    color: #333; /* Muestra el botón cuando se hace hover sobre el contenedor */
+    color: #333;
   }
 
   .play {
@@ -77,17 +77,17 @@
     cursor: pointer;
     border: none;
 
-    position: absolute; /* Posiciona el botón encima de la imagen */
-  top: 80%; /* Centra verticalmente */
-  left: 80%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%); /* Ajusta para centrar el botón completamente */
+    position: absolute; 
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
   
 
   position: absolute;
-  top: 70%; /* Empieza completamente fuera del contenedor (abajo) */
-  left: 80%;/* Centrado horizontalmente */
+  top: 70%; 
+  left: 80%;
   transform: translate(-50%, 0);
-  transition: top 0.3s ease, opacity 0.3s ease; /* Transición suave para top y opacidad */
+  transition: top 0.3s ease, opacity 0.3s ease;
   opacity: 0;
   z-index: 999999;
   }
